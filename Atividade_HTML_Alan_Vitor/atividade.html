@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DSM-EMPRESAS</title>
+    <link rel="stylesheet" type="text/css" href="atividade.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon" />
+</head>
+
+<style>
+    body {
+        background-image: url(imagens/fundo3.jpg);
+        background-repeat: no-repeat;
+
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1>DSM<span style="color: rgb(1, 55, 233);">empresas</span></h1>
+        <div id="menu">
+            <a href="#">Home</a>
+            <a href="#">Quem somos</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contato</a>
+        </div>
+    </header>
+    <form>
+        <section>
+            <img id="imagemreuniao" src="imagens/reuniao2.png">
+            <fieldset id="formulario" style="width: 250px; height: 400px;">
+                <div id="campos">
+                    <label>Nome</label>
+                    <br>
+                    <input type="name" placeholder="Digite seu nome completo" required size="30">
+                    <br><br>
+                    <label>Telefone</label>
+                    <br>
+                    <input type="tel" maxlength="15" pattern="\([0-9]{2}\)[9]{1} [0-9]{4}-[0-9]{4}"
+                        placeholder="(xx)9 9999-9999" required size="30">
+                    <br><br>
+                    <label>Empresa</label>
+                    <br>
+                    <input type="name" placeholder="Nome da empresa" required size="30">
+                    <br><br>
+                    <Label>E-mail</Label>
+                    <br>
+                    <input type="email" id="em" name="email" required size="30">
+                </div>
+                <br><br>
+                <fieldset id="checkbox" style="height:50px; width: 220px;">
+                    <input type="checkbox" name="resp1" value="e" required>
+                    <label>Não sou um robô</label>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/RecaptchaLogo.svg/800px-RecaptchaLogo.svg.png"
+                        width="50px">
+                </fieldset>
+                <br>
+                <input type="submit" value="Enviar" style=" width: 250px;"
+                    onclick="alert('Cadastro realizado com sucessso!');" required="e">
+            </fieldset>
+        </section>
+
+        <section id="descricao1" onclick="location.href='#';" style="cursor: pointer;">
+            <img class="icone" src="imagens/icone-crescimento.png">
+            <h2> Acelere seu crescimento </h2>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem eligendi repudiandae quaerat sed quia
+                mollitia laborum deserunt distinctio eveniet ab assumenda explicabo obcaecati, maiores, odit unde
+                nostrum velit accusantium.</p>
+
+        </section>
+        <section id="descricao2" onclick="location.href='#';" style="cursor: pointer;">
+            <img class="icone" src="imagens/icone-tempo.png">
+            <h2> Economize seu tempo </h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illo iure impedit omnis doloremque,
+                assumenda consequuntur sed architecto, quam dicta natus fuga officia, aspernatur quos! Placeat doloribus
+                veniam nihil ipsum!</p>
+        </section>
+        <section class="icone" id="descricao3" onclick="location.href='#';" style="cursor: pointer;">
+            <img class="icone" src="imagens/coins_5210776.png">
+            <h2> Invista no que interessa </h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illo iure impedit omnis doloremque,
+                assumenda consequuntur sed architecto, quam dicta natus fuga officia, aspernatur quos! Placeat doloribus
+                veniam nihil ipsum!</p>
+        </section>
+    </form>
+
+
+    <footer id="rodape">
+        <br>
+        <p> © Todos os direitos reservados - Alan e Vitor - DSM - Desenvolvimento Web 1 - 2023</p>
+    </footer>
+
+
+
+</body>
+
+</html>

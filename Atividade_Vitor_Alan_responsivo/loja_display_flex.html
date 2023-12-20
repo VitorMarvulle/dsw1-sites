@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin: 0;
+    }
+
+    .header {
+      background: #7519b3;
+      padding: 50px;
+      text-align: center;
+      color: antiquewhite;
+    }
+
+    .navbar {
+      display: flex;
+      background-color: black;
+    }
+
+    .navbar a {
+      color: aliceblue;
+      padding: 10px 15px;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .banner {
+      text-align: center;
+      background: #c0ee56;
+
+    }
+
+    .banner img {
+      margin-top: 20px;
+    }
+
+    .loja {
+      display: flex;
+      flex-wrap: wrap;
+      background: #e8eafd;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+
+    .produto {
+      padding: 0px;
+      background: #f7f3ed;
+      margin: 30px;
+      height: 400px;
+      width: 350px;
+      text-align: center;
+      border-radius: 15%;
+
+
+    }
+
+    .produto img {
+      background: #a9e9f1;
+      padding: 50px 40px;
+      margin-top: 20px;
+      border-radius: 15%;
+      height: 300px;
+    }
+
+    .valor {
+      font-size: 30px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .footer {
+      color: rgb(247, 238, 248);
+      text-shadow: 1px 1px 1px black;
+      text-align: center;
+      padding: 10px;
+      background: #c0ee56;
+    }
+
+    .produto:hover {
+      transform: scale(1.1);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      transition: 0.2s;
+    }
+
+
+
+    @media screen and (max-width: 600px) {
+
+      .loja,
+      .navbar {
+        flex-direction: column;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>DSM Store</h1>
+    <p>Vendendo com os melhores preços</p>
+  </div>
+
+  <div class="navbar">
+    <a href="#">Inicio</a>
+    <a href="#">Promoções</a>
+    <a href="#">Categorias</a>
+    <a href="#">Outlet</a>
+  </div>
+
+  <div class="banner" style="height: 350px;">
+    <img src="/imagens/banner.png" alt="banner">
+  </div>
+
+
+
+  <div class="loja">
+
+    <div class="produto">
+      <img src="/imagens/prod1.png" alt="iphone">
+      <div class="nomeprod">iPhone 14 Pro Max - 256Gb</div>
+      <div class="valor">R$8.699,00</div>
+      <div class="condicoes">Á vista</div>
+    </div>
+    <div class="produto">
+      <img src="/imagens/prod2.png" alt="alexa">
+      <div class="nomeprod">Alexa - Smart Speaker</div>
+      <div class="valor">R$349,00</div>
+      <div class="condicoes">Á vista</div>
+    </div>
+    <div class="produto">
+      <img src="/imagens/prod3.png" alt="galaxy-ultra">
+      <div class="nomeprod">Galaxy S23 Ultra - 512Gb</div>
+      <div class="valor">R$9.449,00</div>
+      <div class="condicoes">Á vista</div>
+    </div>
+    <div class="produto">
+      <img src="imagens/prod4.png" alt="earpods">
+      <div class="nomeprod">Apple AirPods - 3ª Geração</div>
+      <div class="valor">R$1.439,00</div>
+      <div class="condicoes">Á vista</div>
+    </div>
+  </div>
+
+  <div class="footer">Alan & Vitor - Todos os direitos reservados.</div>
+
+
+
+
+
+</body>
+
+</html>
